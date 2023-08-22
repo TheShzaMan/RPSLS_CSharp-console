@@ -1,4 +1,7 @@
-﻿namespace RPSLS
+﻿using static System.Net.Mime.MediaTypeNames;
+using System.Buffers.Text;
+
+namespace RPSLS
 {
     internal class Program
     {
@@ -6,6 +9,7 @@
         {
             Game game = new Game();
             game.RunGame();
+
         }
     }
 }
