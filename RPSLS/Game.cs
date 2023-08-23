@@ -106,12 +106,18 @@ namespace RPSLS
             {
                 PlayerOne = new Human("Player1");
                 PlayerTwo = new Cpu("Computer");
+                Console.WriteLine("Please enter name of Player 1");
+                PlayerOne.Name = Console.ReadLine();
                 //intantiate one human player and one Cpu player
             }
             else
             {
                 PlayerOne = new Human("Player1");
                 PlayerTwo = new Human("Player2");
+                Console.WriteLine("Please enter name of Player 1");
+                PlayerOne.Name = Console.ReadLine();
+                Console.WriteLine("Please enter name of Player 2");
+                PlayerTwo.Name = Console.ReadLine();
                 //instantiate two human players
             }
         }
