@@ -9,22 +9,22 @@ namespace RPSLS
     internal abstract class Player
     {
         //Member Variabes (HAS A)
-        public string name;
-        public List<string> gestures;
-        public string chosenGesture;
-        public int score;
+        public string Name;
+        public List<string> Gestures;
+        public string ChosenGesture;
+        public int Score;
 
         //Constructor
-        public Player(string name)
+        public Player()
         {
-            this.name = name;
-            gestures = new List<string> {"rock", "paper", "scissors", "lizard", "Spock" };
-            chosenGesture = "";
-            score = 0;
+            Name = "";
+            Gestures = new List<string> {"rock", "paper", "scissors", "lizard", "Spock" };
+            ChosenGesture = "";
+            Score = 0;
         }
 
         //Member Methods (CAN DO)
         //This abstract method must be overridden by the child Player classes
-        public abstract void ChooseGesture();
+        public abstract int ChooseGesture();
     }
 }
